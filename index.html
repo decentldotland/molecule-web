@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>molecule.sh | an archive of chemical structures for EXM</title>
+  </head>
+  <body>
+    <div class="header">
+    <img class="header-img" src="molecule.svg"/>
+    </div>
+    <h3 class="subtitle">composable building blocks for EXM smart contracts</h3>
+    <h3 class="subtitle"><a href="https://github.com/decentldotland/molecule/tree/main/examples">EXAMPLES</a> &nbsp; &nbsp; // &nbsp; &nbsp; <a href="https://github.com/decentldotland/molecule">GITHUB</a></h3>
+    <br><br>
+    <hr>
+    <br><br>
+    <div class="structure">
+    <pre>molecules/
+├── ar/
+│   ├── tx/
+│   │   └── grapql
+│   └── wallet/
+│       ├── ownerToAddress
+│       └── verify-signature
+└── evm/
+    └── crypto/
+        └── verify-signature</pre>
+    <br><br>
+   	
+    <h3 class="subtitle">releases</h3>
+    <p><a href="https://github.com/decentldotland/molecule/releases/tag/v0.0.1">version 0.0.1</a></p>
+    </div>
+  </body>
+
+
+<!--
+
+    <h3 class="subtitle">examples</h3>
+    <h4>evm signing</h4>
+    The EXM contract below is an example implementation of a contract that uses EVM for contract's caller authentication (action.caller or similarly to msg.sender), empowered by signer atom of evm molecule.
+    <p>
+    <code>
+    npm i -g @execution-machine/sdk
+    </code>
+    </p>
+    <p>
+    To register a name in the contract example, you have first to sign with you wallet the message used for verification in the contract's example which is "hello world".
+    </p>
+    <code>
+    exm function:write XUjW9BgKrhVa0MQg7Y73Frh3xwaZmRHPtSo_WlhhG6w '{"function": "register", "name": "buildooor", "signature": "$YOUR_SIGNATURE_ETHERSCAN", "caller": "$YOUR_ADDRESS_USED_FOR_SIGINING"}' --token EXM_TOKEN_ID
+    </code>
+    <h4>l2 tx content type</h4>
+    <p>How to use tx-gql atom of ar molecule to fetch a transaction's object metadata (content-type in this example). This atom allows contracts to be able to fetch TX's object for both L1 and bundled TXs.</p>
+    <p>
+    <code>npm i -g @execution-machine/sdk</code>
+    </p>
+
+--> 
+
+</html>
